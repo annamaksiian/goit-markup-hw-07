@@ -1,0 +1,42 @@
+/*Feature*/
+.feature {
+  display: flex;
+  justify-content: space-between;
+  .feature__title {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    margin-top: 0%;
+  }
+  .feature__text {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.71;
+    width: 270px;
+  }
+}
+
+.feature__list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: var(--another-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.feature__list--icon-details::before {
+  background-image: url(../images/Group.svg);
+}
+.feature__list--icon-punctuality::before {
+  background-image: url(../images/clock.svg);
+}
+.feature__list--icon-planning::before {
+  background-image: url(../images/diagram.svg);
+}
+.feature__list--icon-technology::before {
+  background-image: url(../images/astronaut.svg);
+}
